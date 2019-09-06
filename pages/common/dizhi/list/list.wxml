@@ -6,7 +6,7 @@
       <text>{{item.mobile}}</text>
       <view class="flex-row">
         <text>{{item.addressRegion}}，{{item.addressDetail}}</text>
-        <text>{{item.lift?"，有电梯":"，无电梯，上楼辛苦了"}}</text>
+        <text>{{item.lift?"，有电梯":"，无电梯"}}</text>
       </view>
       <view class="flex-row">
         <radio checked="{{item.default?true:false}}" value="{{item.id}}" />
