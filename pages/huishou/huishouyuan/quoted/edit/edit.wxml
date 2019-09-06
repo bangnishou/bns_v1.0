@@ -1,0 +1,67 @@
+<!--pages/huishou/huishouyuan/quoted/edit/edit.wxml-->
+<view>
+  <form bindsubmit="formSubmit">
+    <view wx:for="{{masterData}}" wx:key="item">
+      <view class="flex-row">
+        <view>[图例]</view>
+        <view class="flex-column">
+          <view>{{item.name}}</view>
+          <view class="flex-row">
+            <input name="price_{{item.id}}" type="digit" placeholder="输入价格" />
+            <label>元/斤</label>
+          </view>
+        </view>
+        <button data-index="{{index}}" bindtap="goDelete">删除</button>
+      </view>    
+    </view>
+    <view class="flex-row">
+      <view class="flex-column">
+        <view class="flex-row">
+          <label>废品名称：</label>
+          <input placeholder="输入回收废品名称"></input>
+        </view>
+        <view class="flex-row">
+          <label>回收条件：</label>
+          <input placeholder="输入回收条件"></input>
+        </view>
+        <view class="flex-row">
+          <label>回收价格：</label>
+          <input type="digit" placeholder="输入回收价格"></input>
+        </view>
+        <view class="flex-row">
+          <label>价格单位：</label>
+          <input placeholder="输入回收价格单位"></input>
+        </view>        
+      </view>
+      <button data-index="{{index}}" bindtap="goDelete">删除</button>
+    </view>
+    <view class="flex-row">
+      <view class="flex-column">
+        <view class="flex-row">
+          <label>废品名称：</label>
+          <input placeholder="输入回收废品名称"></input>
+        </view>
+        <view class="flex-row">
+          <label>回收条件：</label>
+          <input placeholder="输入回收条件"></input>
+        </view>
+        <view class="flex-row">
+          <label>回收价格：</label>
+          <input type="digit" placeholder="输入回收价格"></input>
+        </view>
+        <view class="flex-row">
+          <label>价格单位：</label>
+          <input placeholder="输入回收价格单位"></input>
+        </view>
+      </view>
+      <button data-index="{{index}}" bindtap="goDelete">删除</button>
+    </view>    
+    <view class="errMsg-list" wx:for="{{tips}}" wx:key="item">
+      {{item}}
+    </view>
+    <view class="flex-row">
+      <button bindtap="goList" size="mini">增加可回收废品</button>
+      <button form-type="submit" size="mini">发布回收价格</button>
+    </view>
+  </form>
+</view>

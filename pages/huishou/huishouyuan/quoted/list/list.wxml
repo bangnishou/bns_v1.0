@@ -1,0 +1,25 @@
+<!--pages/huishou/huishouyuan/quoted/list/list.wxml-->
+<view>
+  <form bindsubmit="formSubmit">
+    <checkbox-group name="recyclables">
+      <view wx:for="{{masterData}}" wx:key="item">
+        <view class="flex-row">
+          <view>[图例]</view>
+          <view class="flex-column">
+            <view>{{item.name}}</view>
+          </view>
+          <checkbox value="{{index}}" />
+        </view>
+      </view>
+      <view class="flex-row">
+        <view>其它</view>
+        <input name="other" type="number" placeholder="输入其它废品数量" value="1" />
+        <label>个</label>
+        <checkbox value="other" />
+      </view>
+    </checkbox-group>
+    <button class="submit-button" disabled="{{!parent}}" form-type="submit">
+      选中返回
+    </button>
+  </form>
+</view>

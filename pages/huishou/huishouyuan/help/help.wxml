@@ -1,0 +1,15 @@
+<!--pages/huishou/huishouyuan/help/help.wxml-->
+<view class="flex-column">
+  <text>说明文字说明文字说明文字说明文字说明文字</text>
+  <view>************************************</view>
+  <view></view>
+  <view>指导图片</view>
+  <view></view>
+  <view>************************************</view>
+  <text>说明文字说明文字说明文字说明文字说明文字</text>
+  <view>************************************</view>
+  <view></view>
+  <view>指导图片</view>
+  <view></view>
+  <view>************************************</view>
+</view>

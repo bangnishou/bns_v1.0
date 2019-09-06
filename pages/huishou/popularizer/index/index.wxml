@@ -1,0 +1,11 @@
+<!--pages/huishou/popularizer/index/index.wxml-->
+<view>
+  <view class="flex-row">
+    <button size="mini" bindtap="">推广</button>
+    <button size="mini" bindtap="goHelp">使用帮助</button>
+    <button size="mini" bindtap="goMy">我的</button>
+  </view>
+  <view class="flex-column">
+    <view class="iconfont icon-qr-code" style="font-size:400px;"></view>
+  </view>
+</view>

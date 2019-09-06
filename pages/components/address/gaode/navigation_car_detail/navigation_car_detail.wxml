@@ -1,0 +1,4 @@
+<!--pages/components/address/gaode/navigation_car_detail/navigation_car_detail.wxml-->
+<view class="text_box" wx:for="{{steps}}" wx:for-item="i">
+  {{i.instruction}}
+</view>

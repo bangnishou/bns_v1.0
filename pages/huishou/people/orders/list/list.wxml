@@ -1,0 +1,83 @@
+<!--pages/huishou/people/orders/list/list.wxml-->
+<view>
+  <view class="flex-column">
+    <view class="flex-row">
+      <label>累计订单：</label>
+      <view>5笔</view>
+    </view>
+    <view class="flex-row">
+      <label>累计重量：</label>
+      <view>约50斤</view>
+    </view>
+  </view>
+  ********************
+  <view class="flex-column">
+    <view class="flex-row">
+      <label>订单编号：</label>
+      <view>xxxxx</view>
+    </view>
+    <view class="flex-row">
+      <label>订单时间：</label>
+      <view>2019-10-10 10:00:00</view>
+    </view>
+    <view class="flex-row">
+      <label>回收地址：</label>
+      <view>xx省xx市xx区",xx街x号</view>
+    </view>
+    <view class="flex-row">
+      <label>废品重量：</label>
+      <view>x斤</view>
+    </view>
+    <view class="flex-row">
+      <label>废品种类：</label>
+      <view>纸箱、饮料瓶、易拉罐、玻璃、塑料</view>
+    </view>
+    <view class="flex-row">
+      <label>订单状态：</label>
+      <view>已接单</view>
+    </view>
+    <button bindtap="goDetail">查看</button>
+  </view>
+  ********************
+  <view class="flex-column">
+    <view class="flex-row">
+      <label>订单编号：</label>
+      <view>xxxxx</view>
+    </view>
+    <view class="flex-row">
+      <label>订单时间：</label>
+      <view>2019-10-10 10:00:00</view>
+    </view>
+    <view class="flex-row">
+      <label>回收时间：</label>
+      <view>2019-10-10 12:00:00/--</view>
+    </view>
+    <view class="flex-row">
+      <label>回收地址：</label>
+      <view>xx省xx市xx区",xx街x号</view>
+    </view>
+    <view class="flex-row">
+      <label>废品重量：</label>
+      <view>x斤</view>
+    </view>
+    <view class="flex-row">
+      <label>废品种类：</label>
+      <view>纸箱、饮料瓶、易拉罐、玻璃、塑料</view>
+    </view>
+    <view class="flex-row">
+      <label>订单状态：</label>
+      <view>已完成</view>
+    </view>
+  </view>
+  **********2019年09月**********
+  <view class="flex-column">
+    <view class="flex-row">
+      <label>累计订单：</label>
+      <view>5笔</view>
+    </view>
+    <view class="flex-row">
+      <label>累计重量：</label>
+      <view>约50斤</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,43 @@
+<!--pages/huishou/jumin/mine/mine.wxml-->
+<block class="flex-column">
+  <block class="flex-column">
+    <view class="flex-column">
+      <text>存钱罐余额（元）</text>
+      <text>{{masterData.balance}}</text>
+    </view>
+    <view class="flex-row">
+      <view class="flex-column">
+        <text>累计回收收入（元）</text>
+        <text>{{masterData.totalIncome}}</text>
+      </view>
+      <view class="flex-column">
+        <text>累计回收重量（公斤）</text>
+        <text>{{masterData.totalWeight}}</text>
+      </view>
+      <view class="flex-column">
+        <text>活跃度</text>
+        <text>{{masterData.rate}}</text>
+      </view>
+    </view>
+  </block>
+  <block wx:if="{{orders.length>0}}">
+    <view class="flex-column" wx:for="{{orders}}" wx:key="item">
+      <text>订单编号：{{item.orderNo}}</text>
+      <text>订单时间：{{item.orderTime}}</text>
+      <text>联系人：{{item.contact}}</text>
+      <text>手机号码：{{item.mobile}}</text>
+      <text>回收地址：{{item.addressRegion}}，{{item.addressDetail}}，{{item.lift?"有电梯":"无电梯"}}</text>
+      <text>废品重量：{{item.weight}}</text>
+      <text>废品种类：{{item.type}}</text>
+      <text>回收要求：{{item.say}}</text>
+      <text>订单状态：{{item.status}}</text>
+      <block wx:if="{{item.status=='已回收，待评价！'}}">
+        <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="goEval" data-id="{{item.orderNo}}">评价</button>
+      </block>
+    </view>
+  </block>
+  <block wx:else>
+    <text>当前无订单！</text>
+  </block>
+  <view bindtap="goFamily">我家齐上阵</view>
+</block>

@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <navigator url="../components/address/list/list">地址列表</navigator>
+  <navigator url="../components/address/gaode/inputtips/inputtips">查询地址</navigator>
+  <navigator url="../components/address/edit/edit">编辑地址</navigator>
+  <navigator url="../components/address/gaode/navigation_car/navigation_car">路线规划</navigator>
+  <navigator url="../components/photograph/person/person">人物照</navigator>
+  <navigator url="../components/photograph/idcard/idcard">身份证照</navigator>
+
+  <navigator url="../huishou/jumin/index/index">居民</navigator>  
+  <navigator url="../huishou/huishouzhan/index/index">回收站</navigator>
+  <navigator url="../huishou/shangchao/index/index">商超</navigator>  
+
+  <navigator url="../huishou/people/index/index">用户</navigator>
+  <navigator url="../huishou/huishouyuan/index/index">回收员</navigator>
+  <navigator url="../huishou/popularizer/index/index">推广</navigator>
+
+  <navigator url="../test/test">测试</navigator>
+</view>

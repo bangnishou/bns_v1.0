@@ -1,0 +1,11 @@
+<!--pages/huishou/huishouyuan/my/agreement/agreement.wxml-->
+<view>
+  <view class="flex-column">
+    <label>协议标题</label>
+    <label>相关协议条款文本</label>
+  </view>
+  <view class="flex-row">
+    <button data-agree="{{true}}" bindtap="goAgree">同意</button>
+    <button data-agree="{{false}}" bindtap="goAgree">不同意</button>
+  </view>
+</view>

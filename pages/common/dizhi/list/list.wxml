@@ -1,0 +1,22 @@
+<!--pages/common/dizhi/list/list.wxml-->
+<radio-group bindchange="changeDefault">
+  <block wx:for="{{masterData}}" wx:key="item">
+    <view class="flex-column">
+      <text>{{item.contact}}</text>
+      <text>{{item.mobile}}</text>
+      <view class="flex-row">
+        <text>{{item.addressRegion}}，{{item.addressDetail}}</text>
+        <text>{{item.lift?"，有电梯":"，无电梯"}}</text>
+      </view>
+      <view class="flex-row">
+        <radio checked="{{item.default?true:false}}" value="{{item.id}}" />
+        <text>设为默认地址</text>
+        <button size="mini" data-id="{{item.id}}" bindtap="goEdit">编辑</button>
+        <button size="mini" data-id="{{item.id}}" bindtap="goDelete">删除</button>
+      </view>      
+    </view>
+  </block>  
+</radio-group>
+<view class="submit-button" bindtap="goCreate">
+  新增回收地址
+</view>

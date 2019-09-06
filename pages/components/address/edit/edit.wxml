@@ -1,0 +1,37 @@
+<!--pages/components/address/edit/edit.wxml-->
+<form bindsubmit="submitAddress">
+  <view class="page">
+      <view class="page__bd">
+          <view class="weui-cells weui-cells_after-title">
+              <view class="weui-cell weui-cell_input">
+                  <view class="weui-cell__bd">
+                      <input name="contact" maxlength="16" class="weui-input" placeholder="联系人姓名" />
+                  </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                  <view class="weui-cell__bd">
+                      <input name="mobile" maxlength="11" type="number" class="weui-input" placeholder="手机号码" />
+                  </view>
+              </view>
+              <view class="weui-cell weui-cell_input" bindtap="selectRegion">
+                  <view class="weui-cell__bd">
+                      <input name="region" class="weui-input" placeholder="地区信息" value="{{address.region}}" disabled="true" />
+                  </view>
+                  <view class="weui-cell__ft iconfont icon-local iconfont-green"></view>
+              </view>
+              <view class="weui-cell">
+                  <view class="weui-cell__bd">
+                      <textarea name="detail" maxlength="256" class="weui-textarea" placeholder="详细地址" value="{{address.houseNo}}{{address.theName}}" />
+                      <view class="weui-textarea-counter">0/256</view>
+                  </view>
+              </view>
+          </view>
+          <view class="weui-btn-area">
+              <button class="weui-btn" type="primary" form-type="submit" style="border-radius:0;">保存</button>
+          </view>
+      </view>
+  </view>
+</form>
+<view class="errMsg-list" wx:for="{{errMsg}}" wx:key="{{item}}" wx:for-item="item">
+  {{item}}
+</view>

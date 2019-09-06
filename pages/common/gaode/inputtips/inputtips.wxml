@@ -1,0 +1,21 @@
+<!--pages/common/gaode/inputtips/inputtips.wxml-->
+<view class="section">
+  <input bindinput="bindInput" placeholder="输入查询地区" focus="true" />
+</view>
+<view>
+  <radio-group bindchange="selectedRegion">
+    <view class="tips-list" wx:for="{{tips}}" wx:key="{{item}}" wx:for-item="item">
+      <view>
+        <view>
+          {{item.name}}
+        </view>
+        <view class="text_address">
+          {{item.district}} {{item.address}}
+        </view>
+      </view>
+      <view wx:if="{{beParent}}">
+        <radio value="{{item.district}}&{{item.address}}&{{item.name}}&{{item.location}}" />
+      </view>
+    </view>
+  </radio-group>
+</view>

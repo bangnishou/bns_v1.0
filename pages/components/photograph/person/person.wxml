@@ -1,0 +1,17 @@
+<!--pages/components/photograph/person/person.wxml-->
+<camera mode="normal" device-position="front" flash="auto" binderror="error" style="width: 100%; height: 350px;">
+  <cover-view class="controls">
+      <cover-image class="img" src="../img/bg-face.png" style="width:100%;"/>
+  </cover-view>
+  <cover-view class="noticeTXT">请将XXX放入框内</cover-view>
+</camera>
+<button type="primary" bindtap="takePhoto">拍照</button>
+<image mode="widthFix" src="{{src}}"></image>
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <input name="api_key" value="VfMS-XisFDyj0gBrJlxAzscPrLhNZ6lt" disabled="true"></input>
+  <input name="api_secret" value="vE2NjHvCCcz6ggz_8_3cLHkTB-ABlKDv" disabled="true"></input>
+  <input name="image_url" value="{{imageURL}}"></input>
+  <input name="return_landmark" value="1" disabled="true"></input>
+  <button form-type="submit">Submit</button>
+</form>

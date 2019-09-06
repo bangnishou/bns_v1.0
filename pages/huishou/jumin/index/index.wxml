@@ -1,0 +1,69 @@
+<!--pages/huishou/jumin/index/index.wxml-->
+<view class="leftmenu" style="width:100%;">
+  <view style="display:flex;flex-direction:row;justify-content:space-between;margin:40rpx;">
+    <view class="iconfont icon-headportrait" bindtap="leftMenu"></view>
+    <view class="iconfont icon-gift" bindtap="goLipin"></view>
+  </view>
+  <view>
+    <view class="flex-row" bindtap="chooseAddress">
+      <label>回收地址：</label>
+      <view wx:if="{{dizhi.id}}">
+        <view>{{dizhi.contact}}</view>
+        <view>{{dizhi.mobile}}</view>
+        <view>{{dizhi.addressRegion}}，{{dizhi.addressDetail}}</view>
+      </view>
+      <view wx:else>
+        <view class="sel-empty">选择回收地址</view>
+      </view>
+    </view>
+    <view style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;">
+      <label>废品重量：</label>
+      <radio-group bindchange="chooseWeight">
+        <view class='label'>
+          <label class="ui-radio {{item.checked==true?'active':''}}" wx:key="item" wx:for="{{weights}}">
+            <radio value="{{item.code}}" checked="{{item.checked}}" />
+            <text class="text">{{item.name}}</text>
+          </label>
+        </view>
+      </radio-group>
+    </view>
+    <view style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;">
+      <label>废品种类：</label>
+      <checkbox-group bindchange="chooseCategory">
+        <view class="label">
+          <label class="ui-radio {{item.checked==true?'active':''}}" wx:key="item" wx:for="{{categorys}}">
+            <checkbox value="{{item.code}}" checked="{{item.checked}}" />
+            <text class="text">{{item.name}}</text>
+          </label>
+        </view>
+      </checkbox-group>
+    </view>
+    <view style="display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start;">
+      <label>回收要求：</label>
+      <checkbox-group bindchange="chooseSay">
+        <view class="label">
+          <label class="ui-radio {{item.checked==true?'active':''}}" wx:key="item" wx:for="{{says}}">
+            <checkbox value="{{item.code}}" checked="{{item.checked}}" />
+            <text class="text">{{item.name}}</text>
+          </label>
+        </view>
+      </checkbox-group>
+    </view>
+  </view>
+  <view class="errMsg-list" wx:for="{{errMsg}}" wx:key="{{item}}" wx:for-item="item">
+    {{item}}
+  </view>
+  <view class="submit-button" bindtap="submitOrder">
+    发送回收订单
+  </view>
+
+  <view class="leftmenu-shade {{leftMenuOpen ? '' : 'leftmenu-hide'}}" bindtap="leftMenu"></view>
+  <view class="leftmenu-list {{leftMenuOpen ? 'leftmenu-show' : ''}}">
+    <view bindtap="goMine">我的环保</view>
+    <view bindtap="goScan">扫一扫</view>
+    <view bindtap="goPayment">付款码</view>
+    <view bindtap="goIncome">收款码</view>
+    <view bindtap="goDizhi">我的地址</view>
+    <view bindtap="">使用帮助</view>
+  </view>
+</view>

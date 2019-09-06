@@ -1,0 +1,74 @@
+<!--pages/huishou/huishouyuan/my/cert/cert.wxml-->
+<view class="flex-row">
+  <button size="mini" data-type="HEAD" bindtap="goCert">头像</button>
+  →
+  <button size="mini" data-type="IDFRONT" bindtap="goCert">身份证正面</button>
+  →
+  <button size="mini" data-type="IDBACK" bindtap="goCert">身份证背面</button>
+  →
+  <button size="mini" data-type="CERT" bindtap="goCert">提交</button>
+</view>
+<view wx:if="{{type=='HEAD'}}">
+  <camera mode="normal" device-position="front" flash="auto" binderror="error" style="width: 100%; height: 350px;">
+    <cover-view class="controls">
+        <cover-image class="img" style="width:100%;"/>
+    </cover-view>
+    <cover-view class="noticeTXT">请按照框内五官位置定位拍照</cover-view>
+  </camera>
+  <button type="primary" bindtap="takePhoto">拍照</button>
+</view>
+<view wx:if="{{type=='IDFRONT'}}">
+  <camera mode="normal" device-position="front" flash="auto" binderror="error" style="width:300px;height:190px;">
+    <cover-view class="controls">
+        <cover-image class="img" style="width:100%;"/>
+    </cover-view>
+    <cover-view class="noticeTXT">请按照框内头像位置定位拍照</cover-view>
+  </camera>
+  <button type="primary" bindtap="takePhoto">拍照</button>
+</view>
+<view wx:if="{{type=='IDBACK'}}">
+  <camera mode="normal" device-position="front" flash="auto" binderror="error" style="width:300px;height:190px;">
+    <cover-view class="controls">
+        <cover-image class="img" style="width:100%;"/>
+    </cover-view>
+    <cover-view class="noticeTXT">请按照框内国徽位置定位拍照</cover-view>
+  </camera>
+  <button type="primary" bindtap="takePhoto">拍照</button>
+</view>
+<view wx:if="{{type=='CERT'}}">
+  <form bindsubmit="formSubmit">
+    <view class="flex-row">
+      <view class="flex-column">
+        <view>***********</view>
+        <view>头像缩小图片</view>
+        <view>***********</view>
+      </view>
+      <view class="flex-column">
+        <view>***********</view>
+        <view>身份证正面图片</view>
+        <view>***********</view>
+      </view>
+      <view class="flex-column">
+        <view>***********</view>
+        <view>身份证背面图片</view>
+        <view>***********</view>
+      </view>
+    </view>
+    <view class="flex-row">
+      <label>姓名：</label>
+      <input name="name" value="{{name}}" />
+    </view>
+    <view class="flex-row">
+      <label>手机号码：</label>
+      <input name="mobile" type="number" value="{{mobile}}" />
+    </view>
+    <view class="flex-row">
+      <checkbox checked="{{agree}}"></checkbox>
+      阅读并同意<navigator url="../agreement/agreement">《相关条款》</navigator>
+    </view>
+    <view class="errMsg-list" wx:for="{{tips}}" wx:key="item">
+      {{item}}
+    </view>
+    <button type="primary" form-type="submit">提交</button>
+  </form>
+</view>

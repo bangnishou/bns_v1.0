@@ -1,0 +1,19 @@
+<!--pages/components/address/gaode/navigation_car/navigation_car.wxml-->
+<view class="flex-style">
+  <view class="flex-item active" bindtouchstart="goToCar">驾车</view>
+  <view class="flex-item" bindtouchstart="goToRide">骑行</view>
+  <view class="flex-item iconfont icon-list" bindtouchstart="goDetail"> {{distance}}</view>
+</view>
+<view class="map_box">
+  <map id="navi_map" longitude="116.451028" latitude="39.949643" scale="12" markers="{{markers}}" polyline="{{polyline}}"></map>
+</view>
+<view class="contant-list">
+  <view>订单号：{{item.orderID}}</view>
+  <view>预约时间：{{item.appointedTime}}</view>
+  <view>废品重量：{{item.weight}}</view>
+  <view>废品种类：{{item.types}}</view>
+  <view>回收要求：{{item.claim}}</view>
+  <view>联系人：{{item.contact}}</view>
+  <view>联系电话：{{item.mobile}}</view>
+  <view>回收地址：{{item.address}}</view>
+</view>

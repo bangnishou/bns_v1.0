@@ -1,0 +1,32 @@
+/* pages/components/address/list/list.wxss */
+
+.kind-list__item{
+  margin:10px 0;
+  background-color:#ffff;
+  border-radius:2px;
+  overflow:hidden
+}.kind-list__item:first-child{
+    margin-top:10
+}
+
+page{
+    background-color: #F8F8F8;
+    font-size: 16px;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+.page__bd {
+    padding-bottom: 40px;
+}
+.page__bd_spacing {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.content-bottom{
+  margin: 10px 10px;
+  border-bottom: 1px solid #c3c3c3;
+}
+.btn-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

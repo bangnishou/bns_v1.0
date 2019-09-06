@@ -1,0 +1,25 @@
+<view class="page">
+  <view class="page__bd page__bd_spacing">
+    <radio-group bindchange="modiDefaultAddress">
+      <view class="kind-list" wx:for="{{addresses}}" wx:key="{{item}}" wx:for-item="item">
+        <view class="kind-list__item">
+          <view class="content-bottom">
+            <view>{{item.contact}}</view>
+            <view>{{item.mobile}}</view>
+            <view>{{item.address}}</view>
+          </view>
+          <view class="btn-bottom">
+            <view>
+              <radio value="{{item.id}}" checked="{{item.first}}">设为默认地址</radio>
+            </view>
+            <view>
+              <button class="weui-btn mini-btn" type="primary" size="mini" data-id="{{item.id}}" bindtap="editAddress">编辑</button>
+              <button class="weui-btn mini-btn" type="warn" size="mini" data-id="{{item.id}}" bindtap="delAddress">删除</button>
+            </view>
+          </view>
+        </view>
+      </view>
+    </radio-group>
+  </view>
+  <view class="iconfont icon-add1" style="display:flex;justify-content:center;font-size:60px;" bindtap="addAddress"></view>
+</view>

@@ -1,0 +1,22 @@
+<!--pages/common/dizhi/select/select.wxml-->
+<radio-group bindchange="select">
+  <block wx:for="{{masterData}}" wx:key="item">
+    <view class="flex-column">
+      <text>{{item.contact}}</text>
+      <text>{{item.mobile}}</text>
+      <view class="flex-row">
+        <text>{{item.addressRegion}}，{{item.addressDetail}}</text>
+        <text>{{item.lift?"，有电梯":"，无电梯"}}</text>
+      </view>
+      <view wx:if="{{item.id==defaultID}}">
+        <radio checked="true" value="{{item.id}}" bindtap="goBack" />
+      </view>
+      <view wx:else>
+        <radio value="{{item.id}}" />
+      </view>
+    </view>
+  </block>
+</radio-group>
+<view class="submit-button" bindtap="goList">
+  管理回收地址
+</view>

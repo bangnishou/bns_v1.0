@@ -1,0 +1,4 @@
+/* pages/common/dizhi/select/select.wxss */
+.ui-radio radio,.ui-radio checkbox {
+  display: none;
+}

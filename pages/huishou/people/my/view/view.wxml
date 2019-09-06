@@ -1,0 +1,26 @@
+<!--pages/huishou/people/my/view/view.wxml-->
+<block class="flex-column">
+  <view class="flex-row">
+    <view class="flex-column">
+      <view>***********</view>
+      <view>LOGO</view>
+      <view>***********</view>
+    </view>
+    <view class="flex-row">
+      <label>用户编号</label>
+    </view>    
+  </view>
+  -------------------------------------------------------
+  <view class="flex-row">
+    <label>活跃度：</label>
+    <view>1</view>
+  </view>
+  -------------------------------------------------------
+  <view class="flex-row">
+    <label>优惠券</label>
+  </view>
+  -------------------------------------------------------
+  <view class="flex-row" bindtap="goAddress">
+    <label>我的地址</label>
+  </view>
+</block>

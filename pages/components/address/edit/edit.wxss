@@ -1,0 +1,5 @@
+/* pages/components/address/edit/edit.wxss */
+.iconfont-green{
+  font-size: 30px;
+  color: #08a368;
+}

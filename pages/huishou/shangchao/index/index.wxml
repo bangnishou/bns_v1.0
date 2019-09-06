@@ -1,0 +1,55 @@
+<!--pages/huishou/shangchao/index/index.wxml-->
+<view style="width:100%;">
+  <view style="display:flex;flex-direction:row;justify-content:space-between;margin:40rpx;">
+    <view class="iconfont icon-headportrait" bindtap=""></view>
+  </view>
+  <view style="margin:40rpx;font-size:16px;">
+    <view style="display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start;">
+      <label>商品编号：</label>
+      <view>
+        <input name="productNo" maxlength="128" placeholder="输入商品编号" />
+      </view>
+    </view>
+    <view style="display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start;">
+      <label>商品名称：</label>
+      <view>
+        <input name="productName" maxlength="128" placeholder="输入商品名称" />
+      </view>
+    </view>
+    <view style="display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start;">
+      <label>商品原价：</label>
+      <view>
+        <input name="original" type="digit" placeholder="输入原价格" />
+      </view>
+    </view>
+    <view style="display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start;">
+      <label>优惠价格：</label>
+      <view>
+        <input name="preferential" type="digit" placeholder="输入优惠后价格" />
+      </view>
+    </view>
+    <view style="display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start;">
+      <label>商品描述：</label>
+      <view>
+        <textarea name="description" maxlength="256" style="width:200px;height:100px;" placeholder="对本商品的活动期限、限购数量、广告语等扩展信息进行描述，如果商家为连锁机构，请指定本商品的有效门店，或全部门店有效 。" />
+      </view>
+    </view>
+    <view style="display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start;">
+      <label>商品图片：</label>
+      <view>
+        +
+      </view>
+    </view>
+  </view>
+
+  <view style="margin:40rpx;font-size:16px;">
+    <view>我的环保</view>
+    <view>发布商品</view>
+    <view>商家信息</view>
+    <view>使用帮助</view>
+  </view>
+
+  <view style="position:absolute;bottom:0px;width:100%;height:150rpx;background-color:#16a752;color:#ffffff;display:flex;flex-direction:row;justify-content:center;align-items:center;">
+    <view style="margin:30rpx;">保存</view>
+  </view>
+</view>

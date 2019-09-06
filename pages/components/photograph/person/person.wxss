@@ -1,0 +1,11 @@
+/* pages/components/photograph/person/person.wxss */
+.controls {
+  position: relative;
+  top: -180px;
+  display: flex;
+}
+.noticeTXT{
+  font-size: 10PX;
+  color: rgb(12, 242, 240);
+  text-align: center
+}

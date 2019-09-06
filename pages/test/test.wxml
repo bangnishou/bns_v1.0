@@ -1,0 +1,13 @@
+<view class="leftmenu">
+  <button size="mini" bindtap="leftMenu">测试</button>  
+  <view class="leftmenu-shade {{leftMenuOpen ? '' : 'leftmenu-hide'}}" bindtap="leftMenu"></view>
+  <view class="leftmenu-list {{leftMenuOpen ? 'leftmenu-show' : ''}}">
+    <view>1</view>
+    <view>2</view>
+    <view>3</view>
+  </view>
+  <block wx:for="{{tdata}}" wx:key="item">
+    <view>{{item.a}}--{{item.b}}</view>
+    <button data-val="{{item.a}}" bindtap="del">删除</button>
+  </block>
+</view>

@@ -1,0 +1,69 @@
+<!--pages/huishou/people/index/index.wxml-->
+<view>
+  <view class="flex-row">
+    <view class="flex-column">
+      <button size="mini" bindtap="goSale">卖废品</button>
+      <button size="mini" bindtap="goOrders">订单</button>
+      <button size="mini" bindtap="goPrepay">服务费支付</button>
+    </view>
+    <button size="mini" bindtap="goHelp">使用帮助</button>
+    <button size="mini" bindtap="goMy">我的</button>
+  </view>
+  <view class="flex-column">
+    <view>
+      <view class="flex-row" bindtap="chooseAddress">
+        <label>回收地址：</label>
+        <view wx:if="{{dizhi.id}}">
+          <view>{{dizhi.contact}}</view>
+          <view>{{dizhi.mobile}}</view>
+          <view>{{dizhi.addressRegion}}，{{dizhi.addressDetail}}</view>
+        </view>
+        <view wx:else>
+          <view class="sel-empty">请点击选择回收地址</view>
+        </view>
+      </view>
+      <view style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;">
+        <label>废品种类：</label>
+        <view bindtap="goTypes">
+          <block wx:if="{{types.length > 0}}">
+            <block wx:for="{{types}}" wx:key="item">
+              <label wx:if="{{index>0}}">、</label>
+              <label>{{item.name}}</label>
+            </block>
+          </block>
+          <block wx:else>
+            <label>请点击选择废品种类</label>
+          </block>
+        </view>
+      </view>
+      <view style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;">
+        <label>废品重量：</label>
+        <view bindtap="goWeight">
+          <block wx:if="{{weight.desc}}">
+            <label>{{weight.desc}}</label>
+          </block>
+          <block wx:else>
+            <label>请点击选择废品重量</label>
+          </block>
+        </view>
+      </view>
+      <view style="display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-start;">
+        <label>回收时间：</label>
+        <view bindtap="goTimes">
+          <block wx:if="{{times.desc}}">
+            <label>{{times.desc}}</label>
+          </block>
+          <block wx:else>
+            <label>请点击选择回收时间段</label>
+          </block>
+        </view>
+      </view>
+    </view>
+    <view class="errMsg-list" wx:for="{{tips}}" wx:key="item">
+      {{item}}
+    </view>
+    <button bindtap="submitOrder">
+      发送回收订单
+    </button>
+  </view>
+</view>

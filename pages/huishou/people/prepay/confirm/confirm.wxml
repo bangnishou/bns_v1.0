@@ -1,0 +1,8 @@
+<!--pages/huishou/people/prepay/confirm/confirm.wxml-->
+<view>
+  <label>含今天在内，您的包{{unit}}截止日期为{{endDate}}，合计需支付本平台服务费</label>
+  <view>¥ {{payment}}</view>
+  <view>订单号：xxxx</view>
+  <view>收款方：帮你收</view>
+  <button bindtap="goPaymet">立即支付</button>
+</view>

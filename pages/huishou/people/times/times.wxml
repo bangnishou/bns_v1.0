@@ -1,0 +1,9 @@
+<!--pages/huishou/people/times/times.wxml-->
+<view>
+  <radio-group bindchange="selectTimes">
+    <block wx:for="{{times}}" wx:key="item">
+      <radio value="{{index}}" checked="{{item.id==id}}">{{item.desc}}</radio>
+    </block>
+  </radio-group>
+  <button size="mini" bindtap="goBack">确定</button>
+</view>

@@ -1,0 +1,16 @@
+<!--pages/common/dizhi/edit/edit.wxml-->
+<form bindsubmit="submit">
+  <block class="flex-column">
+    <input name="contact" maxlength="16" placeholder="联系人姓名" value="{{masterData.contact}}" />
+    <input name="mobile" maxlength="11" type="number" placeholder="手机号码" value="{{masterData.mobile}}" />
+    <input name="addressRegion" placeholder="地区信息" disabled="true" value="{{masterData.addressRegion}}" bindtap="selectRegion" />
+    <textarea name="addressDetail" maxlength="256" placeholder="详细地址" value="{{masterData.addressDetail}}" />
+    <view class="weui-textarea-counter">0/256</view>
+  </block>
+  <view class="errMsg-list" wx:for="{{tips}}" wx:key="item">
+    {{item}}
+  </view>
+  <button class="submit-button" form-type="submit">
+    保存
+  </button>
+</form>

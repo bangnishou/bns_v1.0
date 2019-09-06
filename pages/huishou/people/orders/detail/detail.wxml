@@ -1,0 +1,141 @@
+<!--pages/huishou/people/orders/detail/detail.wxml-->
+<view class="flex-row">
+  <button size="mini" style="background-color:green;">发送订单</button>
+  →
+  <button size="mini" style="background-color:green;">派单中</button>
+  →
+  <button size="mini" style="background-color:orange;">已接单</button>
+  →
+  <button size="mini">填写废品重量</button>
+  →
+  <button size="mini">未完成/服务评价</button>
+</view>
+<view class="flex-column">
+  <view>------------用户------------</view>
+  <view class="flex-row">
+    <label>订单编号：</label>
+    <view>xxxxx</view>
+  </view>
+  <view class="flex-row">
+    <label>订单时间：</label>
+    <view>2019-10-10 10:00:00</view>
+  </view>
+  <view class="flex-row">
+    <label>回收地址：</label>
+    <view>xx省xx市xx区",xx街x号</view>
+  </view>
+  <view class="flex-row">
+    <label>废品重量：</label>
+    <view>x斤</view>
+  </view>
+  <view class="flex-row">
+    <label>废品种类：</label>
+    <view>纸箱、饮料瓶、易拉罐、玻璃、塑料</view>
+  </view>
+</view>
+<view class="flex-column">
+  <view>------------回收志愿者------------</view>
+  <view class="flex-row">
+    <view class="flex-column">
+      <view>***********</view>
+      <view>头像图片</view>
+      <view>***********</view>
+    </view>
+    <view class="flex-column">
+      <view>xxx师傅</view>
+      <view class="iconfont icon-phoneon"></view>      
+    </view>
+  </view>
+  <block class="flex-column">
+    <view class="flex-row">
+      <text>服务态度：</text>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#ffa500"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#ffa500"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#ffa500"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#ffa500"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#ffa500"></view>
+    </view>
+    <view class="flex-row">
+      <text>称重准确：</text>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#ffa500"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#ffa500"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#ffa500"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#d6d6d6"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#d6d6d6"></view>
+    </view>
+    <view class="flex-row">
+      <text>付款及时：</text>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#ffa500"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#ffa500"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#ffa500"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#ffa500"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#ffa500"></view>
+    </view>
+  </block>
+  <block>
+    <view>----回收报价----</view>
+    <view class="flex-row">
+      <view>纸箱：</view>
+      <view>1.00元/斤</view>
+    </view>
+    <view class="flex-row">
+      <view>饮料瓶：</view>
+      <view>1.00元/斤</view>
+    </view>
+    <view class="flex-row">
+      <view>其它废品A：</view>
+      <view>回收条件</view>
+      <view>，2.00元/斤</view>
+    </view>
+    <view class="flex-row">
+      <view>其它废品B：</view>
+      <view>回收条件</view>
+      <view>，30.00元/台</view>
+    </view>
+  </block>
+  <view class="flex-column">
+    <view>------------填写废品重量------------</view>
+    <view class="flex-row">
+      <label>合计：</label>
+      <input type="digit" /> 斤
+    </view>
+  </view>
+  <view class="flex-column">
+    <view>------------未完成------------</view>
+    <view class="flex-row">
+      <checkbox-group>
+        <checkbox>我不在家</checkbox>
+        <checkbox>师傅未到</checkbox>
+        <checkbox>小区不让进</checkbox>
+      </checkbox-group>      
+    </view>
+  </view>  
+  <view class="flex-column">
+    <view>------------服务评价------------</view>
+    <view class="flex-row">
+      <text>服务态度：</text>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#d6d6d6"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#d6d6d6"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#d6d6d6"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#d6d6d6"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#d6d6d6"></view>
+    </view>
+    <view class="flex-row">
+      <text>称重准确：</text>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#d6d6d6"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#d6d6d6"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#d6d6d6"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#d6d6d6"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#d6d6d6"></view>
+    </view>
+    <view class="flex-row">
+      <text>付款及时：</text>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#d6d6d6"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#d6d6d6"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#d6d6d6"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#d6d6d6"></view>
+      <view class="iconfont icon-evaluate" style="font-size:30px;color:#d6d6d6"></view>
+    </view>
+  </view>
+  <button size="mini">提交</button>
+</view>

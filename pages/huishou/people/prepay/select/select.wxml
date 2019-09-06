@@ -1,0 +1,22 @@
+<!--pages/huishou/people/prepay/select/select.wxml-->
+<view class="flex-column">
+  <form bindsubmit="submitMonth">
+    <view class="flex-row">
+      <label>从本月开始，包</label>
+      <input name="amount" type="number" value="1" />
+      <label>个月</label>
+      <button type="mini" form-type="submit">去支付</button>
+    </view>
+  </form>
+  <form bindsubmit="submitYear">
+    <view class="flex-row">
+      <label>从本年度开始，包</label>
+      <input name="amount" type="number" value="1" />
+      <label>年</label>
+      <button type="mini" form-type="submit">去支付</button>
+    </view>
+  </form>
+  <view class="errMsg-list" wx:for="{{tips}}" wx:key="item">
+    {{item}}
+  </view>
+</view>

@@ -1,0 +1,104 @@
+<!--pages/huishou/huishouyuan/index/index.wxml-->
+<view>
+  <view class="flex-row">
+    <view class="flex-column">
+      <button size="mini" bindtap="goOrder">回收接单</button>    
+      <button size="mini" bindtap="goHistory">回收历史</button>
+      <button size="mini" bindtap="goQuoted">回收报价</button>
+      <button size="mini" bindtap="goPrepay">服务费预付</button>
+    </view>
+    <view class="flex-column">
+      <button size="mini" bindtap="goHelp">使用帮助</button>
+    </view>
+    <view class="flex-column">
+      <button size="mini" bindtap="goMy">我的</button>
+    </view>
+  </view>
+  <view class="flex-column">
+    <view class="flex-row">
+      <label>订单编号：</label>
+      <view>xxxxx</view>
+    </view>
+    <view class="flex-row">
+      <label>订单时间：</label>
+      <view>2019-10-10 10:00:00</view>
+    </view>
+    <view class="flex-row">
+      <label>回收地址：</label>
+      <view class="flex-column">
+        <view class="flex-row">
+          <view>a先生</view>
+          <view class="iconfont icon-phoneon"></view>
+        </view>
+        <view>xx省xx市xx区",xx街x号，x-x-xxx，有电梯</view>
+      </view>
+    </view>
+    <view class="flex-row">
+      <label>废品重量：</label>
+      <view>约x斤</view>
+    </view>
+    <view class="flex-row">
+      <label>废品种类：</label>
+      <view>纸箱、饮料瓶、易拉罐、玻璃、塑料</view>
+    </view>
+    <view class="flex-row">
+      <label>回收要求：</label>
+      <view>13:00-18:00家有人</view>
+    </view>
+    <view class="flex-row">
+      <label>订单状态：</label>
+      <view>您已接单</view>
+      <button>完成</button>
+      <button>飞单</button>
+    </view>
+  </view>
+  ********************
+  <view class="flex-column">
+    <view class="flex-row">
+      <label>订单编号：</label>
+      <view>xxxxx</view>
+    </view>
+    <view class="flex-row">
+      <label>订单时间：</label>
+      <view>2019-10-10 10:00:00</view>
+    </view>
+    <view class="flex-row">
+      <label>回收地址：</label>
+      <view class="flex-column">
+        <view class="flex-row">
+          <view>a先生</view>
+          <view class="iconfont icon-phoneon"></view>
+        </view>
+        <view>xx省xx市xx区",xx街x号，x-x-xxx，有电梯</view>
+      </view>
+    </view>
+    <view class="flex-row">
+      <label>废品重量：</label>
+      <view>约x斤</view>
+    </view>
+    <view class="flex-row">
+      <label>废品种类：</label>
+      <view>纸箱、饮料瓶、易拉罐、玻璃、塑料</view>
+    </view>
+    <view class="flex-row">
+      <label>回收要求：</label>
+      <view>13:00-18:00家有人</view>
+    </view>
+    <view class="flex-row">
+      <label>订单状态：</label>
+      <view>您已接单</view>
+      <button>完成</button>
+      <button>飞单</button>
+    </view>
+    <view class="flex-row">
+      <checkbox-group>
+        <checkbox>临时有事</checkbox>
+        <checkbox>用户不在</checkbox>
+        <checkbox>小区不让进</checkbox>
+      </checkbox-group>
+      <button size="mini">提交</button>
+    </view>
+  </view>
+  ********************
+  <button bindtap="sendOrder">请派单</button>
+</view>

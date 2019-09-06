@@ -1,0 +1,9 @@
+<!--pages/huishou/people/types/types.wxml-->
+<view>
+  <checkbox-group bindchange="selectTypes">
+    <block wx:for="{{types}}" wx:key="item">
+      <checkbox value="{{item.id}}" checked="{{item.checked}}">{{item.name}}</checkbox>
+    </block>
+  </checkbox-group>
+  <button size="mini" bindtap="goBack">确定</button>
+</view>

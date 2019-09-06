@@ -1,0 +1,33 @@
+<!--pages/huishou/jumin/eval/eval.wxml-->
+<block class="flex-column">
+  <view class="flex-row">
+    <view class="iconfont icon-info_worker_icon" style="font-size:60px;color:orange;"></view>
+    <view>{{recycler}}</view>
+  </view>
+  <block class="flex-column">
+    <view class="flex-row">
+      <text>服务态度：</text>
+      <view wx:for="{{stars}}" wx:key="item">
+        <view class="iconfont icon-evaluate" style="font-size:30px;{{serviceSelect[item]?'color:#ffa500':'color:#d6d6d6;'}}" data-type="service" data-value="{{item}}" bindtap="goStars"></view>
+      </view>
+      <text style="color:#ffa500;">{{serviceDesc}}</text>
+    </view>
+    <view class="flex-row">
+      <text>称重准确：</text>
+      <view wx:for="{{stars}}" wx:key="item">
+        <view class="iconfont icon-evaluate" style="font-size:30px;{{weightSelect[item]?'color:#ffa500':'color:#d6d6d6;'}}" data-type="weight" data-value="{{item}}" bindtap="goStars"></view>
+      </view>
+      <text style="color:#ffa500;">{{weightDesc}}</text>
+    </view>
+    <view class="flex-row">
+      <text>付款及时：</text>
+      <view wx:for="{{stars}}" wx:key="item">
+        <view class="iconfont icon-evaluate" style="font-size:30px;{{paySelect[item]?'color:#ffa500':'color:#d6d6d6;'}}" data-type="pay" data-value="{{item}}" bindtap="goStars"></view>
+      </view>
+      <text style="color:#ffa500;">{{payDesc}}</text>
+    </view>
+  </block>
+  <button class="submit-button" form-type="submit">
+    提交
+  </button>
+</block>

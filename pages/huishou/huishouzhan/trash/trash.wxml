@@ -1,0 +1,4 @@
+<!--pages/huishou/huishouzhan/trash/trash.wxml-->
+<view wx:for="{{huishouzhan_trash}}" wx:key="item">
+  <view>{{item.name}}</view>
+</view>

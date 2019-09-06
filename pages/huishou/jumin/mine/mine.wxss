@@ -1,0 +1,8 @@
+/* pages/huishou/jumin/mine/mine.wxss */
+.head-logo {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 40rpx;
+  border-radius: 50%;
+  background-color: green;
+}

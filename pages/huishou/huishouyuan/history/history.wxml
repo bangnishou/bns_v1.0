@@ -1,0 +1,109 @@
+<!--pages/huishou/huishouyuan/history/history.wxml-->
+<view>
+  <view class="flex-column">
+    <view class="flex-row">
+      <label>合计完成订单：</label>
+      <view>55笔</view>
+    </view>
+    <view class="flex-row">
+      <label>合计飞单：</label>
+      <view>45笔</view>
+    </view>
+    <view class="flex-row">
+      <label>合计完成率：</label>
+      <view>55.0%</view>
+    </view>
+  </view>
+  ********************
+  <view class="flex-column">
+    <view class="flex-row">
+      <label>订单编号：</label>
+      <view>xxxxx</view>
+    </view>
+    <view class="flex-row">
+      <label>订单时间：</label>
+      <view>2019-10-10 10:00:00</view>
+    </view>
+    <view class="flex-row">
+      <label>回收时间：</label>
+      <view>2019-10-10 12:00:00/--</view>
+    </view>
+    <view class="flex-row">
+      <label>回收地址：</label>
+      <view>xx省xx市xx区",xx街x号</view>
+    </view>
+    <view class="flex-row">
+      <label>废品重量：</label>
+      <view>x斤</view>
+    </view>
+    <view class="flex-row">
+      <label>废品种类：</label>
+      <view>纸箱、饮料瓶、易拉罐、玻璃、塑料</view>
+    </view>
+    <view class="flex-row">
+      <label>订单状态：</label>
+      <view>已结单/用户不在家，已飞单/小区不让进，已飞单</view>
+    </view>
+  </view>
+  ********************
+  <view class="flex-column">
+    <view class="flex-row">
+      <label>订单编号：</label>
+      <view>xxxxx</view>
+    </view>
+    <view class="flex-row">
+      <label>订单时间：</label>
+      <view>2019-10-10 10:00:00</view>
+    </view>
+    <view class="flex-row">
+      <label>回收时间：</label>
+      <view>2019-10-10 12:00:00/--</view>
+    </view>
+    <view class="flex-row">
+      <label>回收地址：</label>
+      <view>xx省xx市xx区",xx街x号</view>
+    </view>
+    <view class="flex-row">
+      <label>废品重量：</label>
+      <view>x斤</view>
+    </view>
+    <view class="flex-row">
+      <label>废品种类：</label>
+      <view>纸箱、饮料瓶、易拉罐、玻璃、塑料</view>
+    </view>
+    <view class="flex-row">
+      <label>订单状态：</label>
+      <view>已结单/用户不在家，已飞单/小区不让进，已飞单</view>
+    </view>
+  </view>
+  ********************
+  <view class="flex-column">
+    <view class="flex-row">
+      <label>2019年09月完成订单：</label>
+      <view>55笔</view>
+    </view>
+    <view class="flex-row">
+      <label>飞单：</label>
+      <view>45笔</view>
+    </view>
+    <view class="flex-row">
+      <label>完成率：</label>
+      <view>55.0%</view>
+    </view>
+  </view>
+  ********************
+  <view class="flex-column">
+    <view class="flex-row">
+      <label>2019年08月完成订单：</label>
+      <view>55笔</view>
+    </view>
+    <view class="flex-row">
+      <label>飞单：</label>
+      <view>45笔</view>
+    </view>
+    <view class="flex-row">
+      <label>完成率：</label>
+      <view>55.0%</view>
+    </view>
+  </view>
+</view>

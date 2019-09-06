@@ -1,0 +1,29 @@
+<!--pages/huishou/huishouyuan/quoted/publish/publish.wxml-->
+<view>
+  <view class="flex-row">
+    <view>纸箱：</view>
+    <view>1.00元/斤</view>
+  </view>
+  <view class="flex-row">
+    <view>饮料瓶：</view>
+    <view>1.00元/斤</view>
+  </view>
+  <view class="flex-row">
+    <view>其它废品A：</view>
+    <view>回收条件</view>
+    <view>，2.00元/斤</view>
+  </view>
+  <view class="flex-row">
+    <view>其它废品B：</view>
+    <view>回收条件</view>
+    <view>，3.00元/斤</view>
+  </view>
+  <view class="flex-row">
+    <button type="primary" size="mini" bindtap="goPublish">
+      确认发布
+    </button>
+    <button type="default" size="mini" bindtap="goBack">
+      返回修改
+    </button>
+  </view>
+</view>

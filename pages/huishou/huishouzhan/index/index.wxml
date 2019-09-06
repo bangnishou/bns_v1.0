@@ -1,0 +1,35 @@
+<!--pages/huishou/huishouzhan/index/index.wxml-->
+<view class="leftmenu" style="width:100%;">
+  <view style="display:flex;flex-direction:row;justify-content:space-between;margin:40rpx;">
+    <view class="iconfont icon-headportrait" bindtap="leftMenu"></view>
+    <view class="iconfont icon-gift" bindtap=""></view>
+  </view>
+  <view wx:for="{{huishouzhan_trash}}" wx:key="item">
+    <view class="flex-row">
+      <view>图例</view>
+      <view class="flex-column">
+        <view>{{item.name}}</view>
+        <view class="flex-row">
+          <input name="productPrice" type="digit" placeholder="输入价格" />
+          <label>元/斤</label>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="errMsg-list" wx:for="{{tips}}" wx:key="item">
+    {{item}}
+  </view>
+  <view class="submit-button" bindtap="publishPrice">
+    发布回收价格
+  </view>
+
+  <view class="leftmenu-shade {{leftMenuOpen ? '' : 'leftmenu-hide'}}" bindtap="leftMenu"></view>
+  <view class="leftmenu-list {{leftMenuOpen ? 'leftmenu-show' : ''}}">
+    <view bindtap="goMine">我的环保</view>
+    <view>回收记录</view>
+    <view bindtap="goScan">扫一扫</view>
+    <view bindtap="goPayment">付款码</view>
+    <view>实名制</view>
+    <view bindtap="">使用帮助</view>
+  </view>
+</view>

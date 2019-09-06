@@ -1,0 +1,72 @@
+<!--pages/huishou/popularizer/my/view/view.wxml-->
+<block class="flex-column">
+  <view class="flex-row" bindtap="goCert">
+    <view class="flex-column">
+      <view>***********</view>
+      <view>头像图片</view>
+      <view>***********</view>
+    </view>
+    <view class="flex-column">
+      <view>xxx师傅</view>
+      <view>133xxxxxxxx</view>
+      <view>已通过实名认证/实名认证中/已提交</view>
+    </view>
+  </view>
+  <view class="flex-row" bindtap="goCert">
+    <view class="iconfont icon-info_worker_icon" style="font-size:60px;color:gray;"></view>
+    <view class="flex-column">
+      <view>请实名认证</view>
+    </view>
+  </view>
+  ***************************
+  <view class="flex-column">
+    <view class="flex-row">
+      <view class="flex-row">
+        <label>累计推广用户数：</label>
+        <view>100人</view>
+      </view>
+      <view class="flex-row">
+        <label>已结算用户数：</label>
+        <view>88人</view>
+      </view>
+    </view>
+    <view class="flex-row">
+      <view class="flex-row">
+        <label>累计招聘回收志愿者数：</label>
+        <view>39人</view>
+      </view>
+      <view class="flex-row">
+        <label>已结算回收志愿者数：</label>
+        <view>28人</view>
+      </view>
+    </view>
+    ***********2019年09月推广佣金***********
+    <view class="flex-row">
+      <view class="flex-row">
+        <label>用户数：120人</label>
+        <label>佣金：600.00元</label>
+      </view>
+      <view class="flex-row">
+        <label>回收志愿者数：10人</label>
+        <label>佣金：500.00元</label>
+      </view>
+      <view class="flex-row">
+        <label>结算中</label>
+      </view>
+    </view>
+    ***********2019年08月推广佣金***********
+    <view class="flex-row">
+      <view class="flex-row">
+        <label>用户数：120人</label>
+        <label>佣金：600.00元</label>
+      </view>
+      <view class="flex-row">
+        <label>回收志愿者数：10人</label>
+        <label>佣金：500.00元</label>
+      </view>
+      <view class="flex-row">
+        <label>已结算</label>
+      </view>
+    </view>
+  </view>
+</block>

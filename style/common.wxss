@@ -1,0 +1,79 @@
+/***********************************
+*          错误消息提示样式         *
+************************************/
+.errMsg-list{
+  position: relative;
+  top: 30rpx;
+  display: flex;
+  justify-content: center;
+  margin: 5px auto;
+  font-size: 16px;
+  color: #f30909;
+}
+
+/***********************************
+*          左侧弹出菜单样式         *
+************************************/
+.leftmenu {
+  height: 100%;
+}
+/*左侧导航 */
+.leftmenu-list{
+  position: fixed;
+  width: 62%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(245, 245, 245);
+  transform: rotate(0deg) scale(1) translate(-100%,0%);
+  -webkit-transform: rotate(0deg) scale(1) translate(-100%,0%);
+  transition: all 0.4s ease;
+  z-index: 998;
+  font-size: 16px;
+}
+.leftmenu-shade{
+  width: 100%;
+  height: 100%;
+  background-color:#00000052;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.leftmenu-show{
+  transform: rotate(0deg) scale(1) translate(0%,0%);
+  -webkit-transform: rotate(0deg) scale(1) translate(0%,0%);
+}
+.leftmenu-hide{
+  display: none;
+}
+
+/***********************************
+*           横纵向布局样式          *
+************************************/
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+/***********************************
+*            提交按钮样式           *
+************************************/
+.submit-button{
+  position:absolute;
+  bottom:0px;
+  width:100%;
+  height:150rpx;
+  background-color:#16a752;
+  color:#ffffff;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  border-radius:0;
+}
